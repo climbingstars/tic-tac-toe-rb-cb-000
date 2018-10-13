@@ -68,7 +68,7 @@ end
 
 def won?(board)
 WIN_COMBINATIONS.each do |win_combo|
-  if player_move(board, "X", win_combo) || player_move(board, win_combo, "O")
+  if player_move(board, "X", win_combo) || player_move(board, "O", win_combo)
   true
 else
   false
