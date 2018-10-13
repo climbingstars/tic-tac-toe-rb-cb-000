@@ -78,5 +78,6 @@ end
     end
   end
 
-full?(board)
+def full?(board)
+  board.all? { |occupied| occupied == " " }
 end
