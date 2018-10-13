@@ -78,4 +78,5 @@ end
     end
   end
 
-  full?(board)
+full?(board)
+end
