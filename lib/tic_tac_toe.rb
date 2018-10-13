@@ -99,6 +99,5 @@ def winner(board)
   elsif draw?(board)
     nil
   end
-  nil
 end
 end
