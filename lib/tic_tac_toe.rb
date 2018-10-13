@@ -68,6 +68,6 @@ end
 
 def won?(board)
 WIN_COMBINATIONS.each do |win_combo|
-  valid_move?(board, index)
+  position_taken?(board, win_combo)
 end
 end
