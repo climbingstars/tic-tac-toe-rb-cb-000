@@ -96,7 +96,7 @@ def winner(board)
     return "X"
   elsif (board[win_combo[0]]) == "O" && (board[win_combo[1]]) == "O" && (board[win_combo[2]]) == "O"
     return "O"
-  elsif draw?(board)
+  else
     nil
   end
 end
