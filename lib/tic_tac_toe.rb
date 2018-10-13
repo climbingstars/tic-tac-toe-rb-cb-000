@@ -68,7 +68,7 @@ end
 
 def won?(board)
 WIN_COMBINATIONS.each do |win_combo|
-  if win_combo
+  if player_move?(board, win_combo, "X") || player_move?(board, win_combo, "O")
   true
 elsif board[win_combo] == "X" || board[win_combo] == "O"
   false
