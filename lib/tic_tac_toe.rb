@@ -68,8 +68,7 @@ end
 
 def won?(board)
 WIN_COMBINATIONS.each do |win_combo|
-  if input_to_index(board)
-    false
+  win_combo
   end
 end
 end
