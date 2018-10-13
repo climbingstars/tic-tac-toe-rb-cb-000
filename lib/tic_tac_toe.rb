@@ -68,6 +68,7 @@ end
 
 def won?(board)
 WIN_COMBINATIONS.each do |win_combo|
-  position_taken?(board, win_combo)
+  if position_taken?(board, win_combo)
+    false
 end
 end
