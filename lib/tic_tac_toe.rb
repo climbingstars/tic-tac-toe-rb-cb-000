@@ -91,8 +91,10 @@ def over?(board)
 end
 
 def winner(board)
-  if won?(board)
-    return won?(board).to_s
+  if (board[win_combo[0]]) == "X" && (board[win_combo[1]]) == "X" && (board[win_combo[2]]) == "X"
+    return "X"
+  elsif (board[win_combo[0]]) == "O" && (board[win_combo[1]]) == "O" && (board[win_combo[2]]) == "O"
+    "O"
   else
     nil
   end
