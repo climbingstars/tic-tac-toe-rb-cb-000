@@ -70,7 +70,7 @@ def won?(board)
 WIN_COMBINATIONS.each do |win_combo|
   if win_combo
   true
-elsif player_move(board, win_combo, "X" || "O")
+elsif board[win_combo] == "X" || board[win_combo] == "O"
   false
 end
 end
